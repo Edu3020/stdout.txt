@@ -1,0 +1,457 @@
+__CRASHDB_INIT__
+PreventSetUnhandledExceptionFilter: 1
+language: en
+locale: en_US
+
+
+
+========================================
+Startup at Thu May 27 15:44:33 2021
+========================================
+
+
+
+seed: 1622141073
+Requested instance extensions: 
+ - VK_KHR_surface
+ - VK_KHR_win32_surface
+ - VK_KHR_get_physical_device_properties2
+Requested layers: 
+Supported depth resolve: { SampleZero | Average | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #0: NVIDIA GeForce GTX 1060 3GB (id: 7170, vulkan version: 1.2.168, driver version: 1955315712 [466.47.0.0], vendor id: 4318 [Nvidia])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #1: Radeon RX 5500 XT (id: 29504, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #2: Radeon RX550/550 Series (id: 27039, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #3: Radeon RX550/550 Series (id: 27039, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #4: Radeon RX550/550 Series (id: 27039, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+ -> Selected device #0
+__CRASHDB_RENDERER__ Vulkan|Nvidia|NVIDIA GeForce GTX 1060 3GB|1.2.168 466.47.0.0|1.2.168|466.47.0.0|
+Count: 16
+Flags: { Graphics | Compute | Transfer | SparseBinding }
+Count: 2
+Flags: { Transfer | SparseBinding }
+Count: 8
+Flags: { Compute | Transfer | SparseBinding }
+Optional extension not found: 'VK_AMD_memory_overallocation_behavior'
+Requested device extensions: 
+ - VK_KHR_swapchain
+ - VK_EXT_memory_budget
+ - VK_KHR_create_renderpass2
+ - VK_KHR_depth_stencil_resolve
+ - VK_KHR_get_memory_requirements2
+ - VK_KHR_dedicated_allocation
+ - VK_KHR_maintenance1
+ - VK_EXT_memory_priority
+Format support:
+ * R8Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R8G8Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R8G8B8Unorm:
+   - linear: {}
+   - optimal: {}
+ * R8G8B8A8Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16B16Unorm:
+   - linear: {}
+   - optimal: {}
+ * R16G16B16A16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | StorageImageAtomic | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R32G32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R32G32B32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: {}
+ * R32G32B32A32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * B10G11R11UfloatPack32:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16B16A16Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16B16Sfloat:
+   - linear: {}
+   - optimal: {}
+ * D24UnormS8Uint:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | DepthStencilAttachment | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * D32SfloatS8Uint:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | DepthStencilAttachment | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * D16UnormS8Uint:
+   - linear: {}
+   - optimal: {}
+ * D16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | DepthStencilAttachment | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+Memory types:
+ * 0 {}: heap #1
+ * 1 {}: heap #1
+ * 2 {}: heap #1
+ * 3 {}: heap #1
+ * 4 {}: heap #1
+ * 5 {}: heap #1
+ * 6 {}: heap #1
+ * 7 { DeviceLocal }: heap #0
+ * 8 { HostVisible | HostCoherent }: heap #1
+ * 9 { HostVisible | HostCoherent | HostCached }: heap #1
+ * 10 { DeviceLocal | HostVisible | HostCoherent }: heap #2
+Memory heaps:
+ * 0 { DeviceLocal } 2988 MB
+ * 1 {} 8167 MB
+ * 2 { DeviceLocal } 214 MB
+Fifo
+FifoRelaxed
+Mailbox
+Immediate
+Use present mode: Fifo
+Swapchain size: 2 (requested 2: 2-8)
+No pipeline cache to be read
+opened device OpenAL Soft
+sampling rate: 48000 Hz
+
+Build: Build 31994 Windows 64-bit
+Settings:
+ - numSamples: 4
+ - textureQuality: 1
+Swapchain size: 2 (requested 2: 2-8)
+Saved settings to C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/settings.lua
+language: en
+locale: en_US
+Saved pipeline cache to C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/pipelines.cache
+Requested instance extensions: 
+ - VK_KHR_surface
+ - VK_KHR_win32_surface
+ - VK_KHR_get_physical_device_properties2
+Requested layers: 
+Supported depth resolve: { SampleZero | Average | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #0: NVIDIA GeForce GTX 1060 3GB (id: 7170, vulkan version: 1.2.168, driver version: 1955315712 [466.47.0.0], vendor id: 4318 [Nvidia])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #1: Radeon RX 5500 XT (id: 29504, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #2: Radeon RX550/550 Series (id: 27039, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #3: Radeon RX550/550 Series (id: 27039, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+Supported depth resolve: { SampleZero | Min | Max }
+Supperted stencil resolve: { SampleZero | Min | Max }
+Found device #4: Radeon RX550/550 Series (id: 27039, vulkan version: 1.2.170, driver version: 8388787 [2.0.179], vendor id: 4098 [AMD])
+ -> Selected device #0
+__CRASHDB_RENDERER__ Vulkan|Nvidia|NVIDIA GeForce GTX 1060 3GB|1.2.168 466.47.0.0|1.2.168|466.47.0.0|
+Count: 16
+Flags: { Graphics | Compute | Transfer | SparseBinding }
+Count: 2
+Flags: { Transfer | SparseBinding }
+Count: 8
+Flags: { Compute | Transfer | SparseBinding }
+Optional extension not found: 'VK_AMD_memory_overallocation_behavior'
+Requested device extensions: 
+ - VK_KHR_swapchain
+ - VK_EXT_memory_budget
+ - VK_KHR_create_renderpass2
+ - VK_KHR_depth_stencil_resolve
+ - VK_KHR_get_memory_requirements2
+ - VK_KHR_dedicated_allocation
+ - VK_KHR_maintenance1
+ - VK_EXT_memory_priority
+Format support:
+ * R8Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R8G8Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R8G8B8Unorm:
+   - linear: {}
+   - optimal: {}
+ * R8G8B8A8Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16B16Unorm:
+   - linear: {}
+   - optimal: {}
+ * R16G16B16A16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | StorageImageAtomic | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R32G32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R32G32B32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: {}
+ * R32G32B32A32Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * B10G11R11UfloatPack32:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16B16A16Sfloat:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | StorageImage | ColorAttachment | ColorAttachmentBlend | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * R16G16B16Sfloat:
+   - linear: {}
+   - optimal: {}
+ * D24UnormS8Uint:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | DepthStencilAttachment | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * D32SfloatS8Uint:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | DepthStencilAttachment | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+ * D16UnormS8Uint:
+   - linear: {}
+   - optimal: {}
+ * D16Unorm:
+   - linear: { SampledImage | BlitSrc | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+   - optimal: { SampledImage | DepthStencilAttachment | BlitSrc | BlitDst | SampledImageFilterLinear | TransferSrc | TransferDst | SampledImageFilterMinmax }
+Memory types:
+ * 0 {}: heap #1
+ * 1 {}: heap #1
+ * 2 {}: heap #1
+ * 3 {}: heap #1
+ * 4 {}: heap #1
+ * 5 {}: heap #1
+ * 6 {}: heap #1
+ * 7 { DeviceLocal }: heap #0
+ * 8 { HostVisible | HostCoherent }: heap #1
+ * 9 { HostVisible | HostCoherent | HostCached }: heap #1
+ * 10 { DeviceLocal | HostVisible | HostCoherent }: heap #2
+Memory heaps:
+ * 0 { DeviceLocal } 2988 MB
+ * 1 {} 8167 MB
+ * 2 { DeviceLocal } 214 MB
+Fifo
+FifoRelaxed
+Mailbox
+Immediate
+Use present mode: Fifo
+Swapchain size: 2 (requested 2: 2-8)
+Sucessfully read pipeline cache C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/pipelines.cache
+opened device OpenAL Soft
+sampling rate: 48000 Hz
+
+Build: Build 31994 Windows 64-bit
+Settings:
+ - numSamples: 4
+ - textureQuality: 1
+Swapchain size: 2 (requested 2: 2-8)
+Loading from file C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/save/VISH DNV.sav
+savegame version 296
+active mods:
+config dict:
+  climate: tropical
+  vehicles: usa
+  nameList: usa
+  environment: tropical
+  difficulty: medium
+mod params:
+script load from C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/save/VISH DNV.sav.lua
+achievements earnable: 1
+init version: 296
+map seed text: RkKZKt2tsc
+adding archive res/models/models.zip
+ModelRep: 80689.9 ms
+No resources are missing!
+Shader reload took : 13.113 ms
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/emissive_14796080332965863750_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/leafCard_2018824179817008446_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/leafCard_3570905625938530468_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/leafCardDepth_3716171273982227573_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/leafCardDepth_242607191738834622_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/leafCardColor_5144056737878006218_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/leafCardColor_9959918247887650185_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTree_12607391800770004498_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTree_6207681487571452950_geom.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTree_10079381003480913085_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeDepth_302548845979992924_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeDepth_4603206852957828952_geom.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeDepth_17909376736789317356_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeColor_14404171660131484854_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeColor_562154990835201308_geom.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeColor_11113662942494074209_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeMultiSsbo_11202574210948197253_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeMultiSsbo_3649827684014840116_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeMultiDepthSsbo_6930443926563940911_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeMultiDepthSsbo_13067066581001144967_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeMultiColorSsbo_12503463743425389453_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/bbTreeMultiColorSsbo_10005642828472472844_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinning_2974290680871072266_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinning_13212296168607954226_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningDepth_13235701807312374485_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningDepth_13013231772845880534_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningColor_209848918629467008_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningColor_12534084581543672783_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysCblend4_11387118353103094308_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysCblend4_1427136914199589659_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysNrmlMap_13826485926543762665_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysNrmlMap_12970500095474368477_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningColorNrmlMap_6677286506901062458_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningColorNrmlMap_3775086129084432731_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysNrmlMapOp_6192160075950782895_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysNrmlMapOp_12970500095474368477_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysNrmlMapCblend4_13874089445307471399_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningPhysNrmlMapCblend4_4990751566427221708_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningTranspNrmlMap_11049977917469320237_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningTranspNrmlMap_13424517336770553510_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningDepthAlpha_10056725310713922602_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningDepthAlpha_4889526047916464497_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningColorAlphaNrmlMap_14970653396215855159_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningColorAlphaNrmlMap_3775086129084432731_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningTranspNrmlMapOp_771358562358428257_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/skinningTranspNrmlMapOp_13424517336770553510_vert.spv
+prepare material ubo's: 4009.32 ms
+Using 200 UBOs, total 0 bytes
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrHistogram_1502702588079057402_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrHistogram_81577016919811214_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrCompose_16822418816266614644_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrCompose_81577016919811214_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrLum_17071435368832692817_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrLum_11051400208818553521_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrBlurCompose_1761246701702694265_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/hdrBlurCompose_11051400208818553521_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/ssaoMain_1988469262242102925_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/ssaoMain_11051400208818553521_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/ssaoApply_2573363796200010786_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/ssaoApply_11051400208818553521_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/sky_13092903990110438426_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/sky_12249358255180044089_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/waterNormals_17153527779549176540_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/waterNormals_2945711457791234632_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/water_17131790038795356975_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/water_13877481647598501143_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/waterColor_17191591379792378189_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/waterColor_13877481647598501143_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/waterWave_7250295915716934147_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/waterWave_15539934468504705785_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/shipFoamNormals_15724231480195884894_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/shipFoamNormals_15539934468504705785_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/shipFoam_10017476500912983547_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/shipFoam_15539934468504705785_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/smokeSsbo_14398345476941959783_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/smokeSsbo_17553691338570642838_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/labelText_15726701714612438528_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/labelText_15770974655392780384_vert.spv
+Resource 'grass_dark_green.lua' not found!
+Resource 'grass_dark_green.lua' not found!
+Resource 'forest_ground.lua' not found!
+Resource 'grass_alpine.lua' not found!
+Initial material index generation: 30679.4 ms
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain_12229088929629522223_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSixteen_15260040054278426430_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSpecial_2098498024464915471_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSpecial_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain3x3_12208383849998346882_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain3x3_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain3x3Sixteen_2852764489085282563_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain3x3Sixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain3x3Special_14119520062740594210_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrain3x3Special_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar_17201303854787586897_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanarSixteen_12350093443178635644_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanarSixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanarSpecial_11947507811007885237_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanarSpecial_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar3x3_16426848465790634040_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar3x3_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar3x3Sixteen_15522657056907900381_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar3x3Sixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar3x3Special_15207078907457217284_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainTriplanar3x3Special_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainNoFilter_16737659045247101574_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainNoFilter_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor_10354201582144260769_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorSixteen_3098885450419116204_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorSixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorSpecial_1733742308316518697_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorSpecial_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor3x3_12773963019777607584_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor3x3_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor3x3Sixteen_16235866335488291685_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor3x3Sixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor3x3Special_13134447286188674760_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColor3x3Special_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar_8698009653158571887_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanarSixteen_9019340751574413798_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanarSixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanarSpecial_17320841985871703051_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanarSpecial_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar3x3_17887996407143947602_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar3x3_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar3x3Sixteen_13148903062773482907_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar3x3Sixteen_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar3x3Special_17902618815725150646_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorTriplanar3x3Special_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorNoFilter_10409747149638953436_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainColorNoFilter_16523815481378646458_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainDepth_1091468009102300334_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainDepth_18139372518532050450_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainDepthZ_1840379483784112529_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainDepthZ_18139372518532050450_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSkirt_4481352797198467267_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSkirt_17281999038098800910_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSkirtColor_9599092152637296417_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/terrainSkirtColor_17281999038098800910_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassVert_0_12571795048833732090_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassVert_0_18146227709623353901_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassColorVert_0_10192079263475441180_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassColorVert_0_18146227709623353901_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassDepthZVert_0_9108188128683092008_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassDepthZVert_0_16178225813584169540_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassVert_1_11796166219681376317_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassVert_1_11343646821847533290_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassColorVert_1_11542975028804240951_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassColorVert_1_11343646821847533290_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassDepthZVert_1_6923359075657256739_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/grassDepthZVert_1_15079145701708797215_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/stdPoint_5354176027557431733_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/stdPoint_15921689096222089045_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/linesColor_10531039122732438576_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/linesColor_13393373035041293757_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/linesTexColor_12127680597745406577_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/linesTexColor_7104735712078132262_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/stdTex_4060290556038256987_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/stdTex_12359236233594838811_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/noTexture_11205180981663780154_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/noTexture_12806510592510141863_vert.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/isocontours_18004581623849830753_frag.spv
+Writing pre-compiled blob to: C:/Program Files (x86)/Steam/userdata/165284427/1066780/local/shader_cache/isocontours_2389780216943621576_vert.spv
